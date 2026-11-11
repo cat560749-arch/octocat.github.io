@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>kitjyyy — vibecoding &amp; gaming</title>
+  <meta name="description" content="kitjyyy — вайбкодинг, Roblox, Minecraft и МДР. Ссылки, теги и сетап.">
+  <meta name="theme-color" content="#05060f">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="kitjyyy — vibecoding &amp; gaming">
+  <meta property="og:description" content="вайбкодинг, Roblox, Minecraft и МДР.">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- фон: свечение + снег -->
+  <div class="glow" aria-hidden="true"></div>
+  <canvas id="sky" class="sky" aria-hidden="true"></canvas>
+
+  <main class="page">
+
+    <!-- ================= ШАПКА ================= -->
+    <header class="hero reveal">
+      <div class="avatar" aria-hidden="true">
+        <svg viewBox="0 0 120 120" role="presentation">
+          <defs>
+            <linearGradient id="avGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#7af0ff"/>
+              <stop offset=".45" stop-color="#3f6bff"/>
+              <stop offset="1" stop-color="#a12bff"/>
+            </linearGradient>
+            <radialGradient id="avShine" cx=".32" cy=".2" r=".85">
+              <stop offset="0" stop-color="#fff" stop-opacity=".55"/>
+              <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <circle cx="60" cy="60" r="60" fill="url(#avGrad)"/>
+          <path d="M60 4c10 21 3 33-8 46-12 14-19 28-6 48C17 84 12 50 33 27 43 16 53 10 60 4Z" fill="#05060f" opacity=".9"/>
+          <circle cx="60" cy="60" r="60" fill="url(#avShine)"/>
+        </svg>
+      </div>
+
+      <!-- ник -->
+      <h1 class="hero__name">kitjyyy</h1>
+      <p class="hero__tag">vibecoding &amp; gaming</p>
+    </header>
+
+    <!-- ================= СТАТУС ================= -->
+    <section class="status reveal" aria-labelledby="statusTitle">
+      <div class="status__badge"><span class="dot" aria-hidden="true"></span> online</div>
+
+      <div class="status__eq" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+
+      <h2 class="status__title" id="statusTitle">сейчас пишу код.</h2>
+      <p class="status__text">
+        вайбкодинг под phonk: сайты, боты и мелкие автоматизации.<br>
+        на связи почти всегда. <span class="status__joke">( Наверно :D )</span>
+      </p>
+
+      <a class="pill" href="https://t.me/KitJyyyy" target="_blank" rel="noopener">
+        написать в telegram
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M5 12h13"/><path d="m13 6 6 6-6 6"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- ================= ССЫЛКИ ================= -->
+    <nav class="links reveal" aria-label="Мои ссылки">
+
+      <a class="link" href="https://www.tiktok.com/@itslikeailia" target="_blank" rel="noopener">
+        <span class="link__label">TikTok</span>
+        <span class="link__arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 17 17 7"/><path d="M9 7h8v8"/>
+          </svg>
+        </span>
+      </a>
+
+      <a class="link" href="https://t.me/KitJyyyy" target="_blank" rel="noopener">
+        <span class="link__label">Telegram</span>
+        <span class="link__arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 17 17 7"/><path d="M9 7h8v8"/>
+          </svg>
+        </span>
+      </a>
+
+      <a class="link" href="https://funpay.com/users/19996854/" target="_blank" rel="noopener">
+        <span class="link__label">FunPay</span>
+        <span class="link__arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 17 17 7"/><path d="M9 7h8v8"/>
+          </svg>
+        </span>
+      </a>
+
+      <button class="link link--copy" type="button" data-copy="yuguhtgu8i9_13492" aria-label="Скопировать ник в Discord">
+        <span class="link__label">Discord</span>
+        <span class="link__value">
+          yuguhtgu8i9_13492
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="9" y="9" width="11" height="11" rx="2.5"/>
+            <path d="M15 5.5A2.5 2.5 0 0 0 12.5 3h-7A2.5 2.5 0 0 0 3 5.5v7A2.5 2.5 0 0 0 5.5 15"/>
+          </svg>
+        </span>
+      </button>
+
+    </nav>
+
+    <!-- ================= ЧЕМ ЗАНИМАЮСЬ ================= -->
+    <section class="section reveal" aria-labelledby="tagsTitle">
+      <h2 class="eyebrow" id="tagsTitle">чем занимаюсь</h2>
+
+      <ul class="chips">
+        <li class="chip"><span aria-hidden="true">💻</span> Вайбкодинг</li>
+        <li class="chip"><span aria-hidden="true">🎮</span> Roblox</li>
+        <li class="chip"><span aria-hidden="true">⛏️</span> Minecraft</li>
+        <li class="chip"><span aria-hidden="true">⚡</span> МДР</li>
+      </ul>
+    </section>
+
+    <!-- ================= СЕТАП ================= -->
+    <section class="section reveal" aria-labelledby="setupTitle">
+      <h2 class="setup-title" id="setupTitle">мой сетап.</h2>
+      <p class="setup-sub">железо, на котором всё это пишется.</p>
+
+      <ul class="setup">
+        <li>
+          <span class="setup__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="7" y="7" width="10" height="10" rx="2"/>
+              <rect x="10" y="10" width="4" height="4" rx="1"/>
+              <path d="M9 3v2M15 3v2M9 19v2M15 19v2M3 9h2M3 15h2M19 9h2M19 15h2"/>
+            </svg>
+          </span>
+          <span class="setup__label">Процессор</span>
+          <span class="setup__val">Intel Core i5-11400H<small>11th Gen</small></span>
+        </li>
+
+        <li>
+          <span class="setup__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="6" width="20" height="12" rx="2"/>
+              <circle cx="9" cy="12" r="3"/>
+              <circle cx="17" cy="12" r="1.8"/>
+              <path d="M2 10h2M20 10h2"/>
+            </svg>
+          </span>
+          <span class="setup__label">Видеокарта</span>
+          <span class="setup__val">NVIDIA GeForce RTX 3060 Ti<small>8 GB GDDR6</small></span>
+        </li>
+
+        <li>
+          <span class="setup__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="8" width="18" height="9" rx="2"/>
+              <path d="M7 11v3M11 11v3M15 11v3"/>
+              <path d="M6 17v2M18 17v2"/>
+            </svg>
+          </span>
+          <span class="setup__label">ОЗУ</span>
+          <span class="setup__val">16 GB DDR4<small>3200 MHz</small></span>
+        </li>
+
+        <li>
+          <span class="setup__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="5" width="18" height="14" rx="2"/>
+              <path d="M7 15h5"/>
+              <circle cx="17" cy="9" r="1"/>
+            </svg>
+          </span>
+          <span class="setup__label">Накопитель</span>
+          <span class="setup__val">SSD 512 GB<small>NVMe</small></span>
+        </li>
+
+        <li>
+          <span class="setup__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="12" rx="2"/>
+              <path d="M9 20h6M12 16v4"/>
+            </svg>
+          </span>
+          <span class="setup__label">Монитор</span>
+          <span class="setup__val">165 Hz<small>IPS</small></span>
+        </li>
+
+        <li>
+          <span class="setup__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="10" rx="2"/>
+              <path d="M6 11h2M6 13h2M10 11h2M10 13h2M14 11h2M14 13h2M18 13h1"/>
+            </svg>
+          </span>
+          <span class="setup__label">Периферия</span>
+          <span class="setup__val">механика + 800 DPI<small>без rgb-перегибов</small></span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ================= ФУТЕР ================= -->
+    <footer class="footer reveal">
+      <span>© <span id="year">2026</span> kitjyyy</span>
+      <span class="footer__dot" aria-hidden="true">·</span>
+      <span>сделано вручную, без конструкторов</span>
+    </footer>
+
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/snow.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
